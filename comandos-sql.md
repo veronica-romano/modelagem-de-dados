@@ -10,6 +10,7 @@ CREATE DATABASE vendas CHARACTER SET utf8mb4;
 ## Criar a tabela fabricantes
 ``` sql
 CREATE TABLE fabricantes(
-    id INT 
+    id INT  NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL
 ) ;
 ```
