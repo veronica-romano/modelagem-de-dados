@@ -38,5 +38,7 @@ DESC produtos;
 ## Criação da chave estrangeira (relacionamento entre tabelas)
 
 ``` sql
-ALTER TABLE
+ --constraint é um descrição definida no relacionamento--
+ALTER TABLE produtos ADD CONSTRAINT fk_produtos_fabricantes FOREIGN KEY (fabricante_id) REFERENCES fabricantes(id);
+
 ```
