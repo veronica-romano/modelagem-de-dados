@@ -47,3 +47,11 @@ USE produtos;
 ALTER TABLE produtos ADD CONSTRAINT fk_produtos_fabricantes FOREIGN KEY (fabricante_id) REFERENCES fabricantes(id);
 
 ```
+
+## Adicionar campo ou coluna na tabela
+
+``` sql
+ --constraint é um descrição definida no relacionamento--
+ALTER TABLE produtos ADD fabricante_id INT NOT NULL AFTER preco;
+
+```
