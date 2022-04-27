@@ -35,6 +35,11 @@ CREATE TABLE produtos(
 DESC produtos;
 ```
 
+## Acessar a tabela
+``` sql
+USE produtos;
+```
+
 ## Criação da chave estrangeira (relacionamento entre tabelas)
 
 ``` sql
