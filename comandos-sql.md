@@ -17,8 +17,5 @@ CREATE TABLE fabricantes(
 
 ## Visualizar detalhes estruturais da tabela
 ``` sql
-CREATE TABLE fabricantes(
-    id INT  NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(45) NOT NULL
-) ;
+DESC fabricantes;
 ```
