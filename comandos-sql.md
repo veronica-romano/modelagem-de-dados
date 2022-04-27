@@ -3,4 +3,6 @@
 ## Modelagem física
 
 ## Criar o banco de dados
-CREATE DATABASE vendas CHARRACTER SET utf8mb4;
+``` sql
+CREATE DATABASE vendas CHARACTER SET utf8mb4;
+```
