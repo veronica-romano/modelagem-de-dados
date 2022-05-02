@@ -72,4 +72,5 @@ VALUES
 ``` sql
 SELECT * FROM produtos;
 SELECT nome, preco FROM produtos;
+SELECT nome FROM produtos WHERE preco < 5000;
 ```
