@@ -25,6 +25,8 @@ VALUES (
     'Ultrabook',
     'Intel Ultrabook Asus com processador Intel cORE i12, memória RAM de 16GB e Windows 11',
     6500.99,
+    7,
+    
 );
 
 
