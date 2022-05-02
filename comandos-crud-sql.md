@@ -39,12 +39,27 @@ VALUES (
 );
 
 INSERT INTO produtos (nome, descricao, preco, quantidade, fabricante_id) 
-VALUES (
-    'Tablet Android',
-    'Tablet comum versão 12 do sistema operacional da google. Possui tela de 10 polegadas e armazenamento de 64GB',
-    4999.99,
-    4,
-    5 
+VALUES 
+(
+    'Geladeira',
+    'Refrigerador frost-free com acesso à internet das coisas e bla bla bla',
+    1500,
+    10,
+    6 
+),
+(
+    'iphone 13 Pro Max',
+    'Alta durabilidade, processador Bionic 14 memória de 128GB de rmazenamento e 6GB de RAM e caro pra caramba',
+    6999.99,
+    3,
+    3 
+),
+(
+    'iPad Mini',
+    'Tablet apple com tela retina display de 4k e memória interna de 64GB e acesso gratuito ao iCloud',
+    5000,
+    8,
+    3 
 );
 
 
