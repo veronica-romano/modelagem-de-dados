@@ -26,7 +26,7 @@ VALUES (
     'Intel Ultrabook Asus com processador Intel cORE i12, memória RAM de 16GB e Windows 11',
     6500.99,
     7,
-    1
+    1 --id que consta no banco de dados
 );
 
 
