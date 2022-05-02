@@ -9,8 +9,12 @@
 
 ## INSERT
 ``` sql
-INSERT INTO fabricantes (nome) VALUES('Asus');
 --o banco crirá o autoincremet do id, então não podemos colocar aqui
+INSERT INTO fabricantes (nome) VALUES('Asus');
+INSERT INTO fabricantes (nome) VALUES ('Dell');
+-- Inserirndo vários de uma vez:
+
+INSERT INTO fabricantes (nome) VALUES ('Dell'), ('Apple'), ('LG'), ('Samsung'), ('Brastemp');
 
 
 ````
