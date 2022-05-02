@@ -29,6 +29,15 @@ VALUES (
     1 --id que consta no banco de dados
 );
 
+INSERT INTO produtos (nome, descricao, preco, quantidade, fabricante_id) 
+VALUES (
+    'Tablet Android',
+    'Tablet comum versão 12 do sistema operacional da google. Possui tela de 10 polegadas e armazenamento de 64GB',
+    4999.99,
+    4,
+    5 
+);
+
 
 
 ````
