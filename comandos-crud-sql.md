@@ -19,7 +19,7 @@ INSERT INTO fabricantes (nome) VALUES ('Dell'), ('Apple'), ('LG'), ('Samsung'), 
 ```
 ### Produtos
 ``` sql
---o banco crirá o autoincremet do id, então não podemos colocar aqui
+
 INSERT INTO produtos (nome, descricao, preco, quantidade, fabricante_id) 
 VALUES (
     'Ultrabook',
@@ -37,7 +37,10 @@ VALUES (
     4,
     5 
 );
+```
 
+``` sql
+-- inserindo múltiplos valores
 INSERT INTO produtos (nome, descricao, preco, quantidade, fabricante_id) 
 VALUES 
 (
@@ -61,9 +64,7 @@ VALUES
     8,
     3 
 );
+```
 
-
-
-
-
-````
+``` sql
+```
