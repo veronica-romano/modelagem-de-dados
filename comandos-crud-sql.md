@@ -7,7 +7,7 @@
 - U - Updade (atualiar dados)
 - D - Delete (excluir dados)
 
-## INSERT
+## INSERT 
 ### Fabricantes
 ``` sql
 --o banco crirá o autoincremet do id, então não podemos colocar aqui
@@ -65,6 +65,6 @@ VALUES
     3 
 );
 ```
-
+## 
 ``` sql
 ```
