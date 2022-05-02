@@ -65,6 +65,11 @@ VALUES
     3 
 );
 ```
-## 
+## SELECT
+--consultar o banco de dados
+### Ler dados da tabela produtos
+
 ``` sql
+SELECT * FROM produtos;
+SELECT nome, preco FROM produtos;
 ```
