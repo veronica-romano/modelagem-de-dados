@@ -82,6 +82,10 @@ SELECT * FROM produtos WHERE preco >= 5000 AND preco < 8000; -- seleciona todos 
 
 SELECT nome, preco FROM produtos WHERE fabricante_id = 3 OR fabricante_id = 8;
 
+
+-- diferente de 
 SELECT nome, preco, quantidade FROM produtos WHERE fabricante_id != 3;
+-- não, exceto
+SELECT nome, preco, quantidade FROM produtos WHERE NOT fabricante_id = 3;
 
 ```
