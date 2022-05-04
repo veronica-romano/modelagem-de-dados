@@ -88,6 +88,7 @@ SELECT nome, preco FROM produtos WHERE fabricante_id IN (3,8);
 
 -- diferente de 
 SELECT nome, preco, quantidade FROM produtos WHERE fabricante_id != 3;
+
 -- não, exceto
 SELECT nome, preco, quantidade FROM produtos WHERE NOT fabricante_id = 3;
 ```
