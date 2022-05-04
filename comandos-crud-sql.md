@@ -124,9 +124,16 @@ SELECT COUNT(id) AS "Quantidade de produtos" FROM produtos;
 SELECT COUNT(fabricante_id) AS "Quantidade de fabricantes" FROM produtos;
 -- conta quantos fabricantes existem na tabela ignorando os repetidos
 SELECT COUNT(DISTINCT fabricante_id) AS "Quantidade de fabricantes" FROM produtos;
+-- calcula o total do preco de acordo com a quantidade
+SELECT nome, preco, quantidade, (preco * quantidade) AS total FROM produtos; 
 ```
-
+### Agrupamentos
 ``` sql
+-- a soma dos preços agrupados
+SELECT SUM(preco) AS TOTAL FROM produtos GROUP BY fabricante_id;
+
+--soma dos preços agrupados com id do fabricante
+SELECT fabricante_id, SUM(preco) AS TOTAL FROM produtos GROUP BY fabricante_id;
 ```
 
 ``` sql
