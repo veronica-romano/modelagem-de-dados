@@ -107,6 +107,7 @@ SELECT nome, descricao FROM produtos WHERE descricao LIKE '%processador%';
 SELECT SUM(preco) FROM produtos;
 SELECT SUM(preco) AS TOTAL FROM produtos;
 SELECT SUM(quantidade) AS "Quantidade em estoque: " FROM produtos;
+SELECT SUM(quantidade) AS "Quantidade em estoque: " FROM produtos WHERE fabricante_id = 3;
 
 ```
 
