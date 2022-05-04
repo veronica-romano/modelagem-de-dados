@@ -112,12 +112,7 @@ SELECT SUM(preco) AS TOTAL FROM produtos;
 SELECT SUM(quantidade) AS "Quantidade em estoque: " FROM produtos;
 -- Mostra a soma das quantidades com o título de 'Quantidade em estoque' somente de produtos apple
 SELECT SUM(quantidade) AS "Quantidade em estoque: " FROM produtos WHERE fabricante_id = 3;
--- Mostra a média dos preços dos produtos (sem levar consideração o estoque)
-SELECT AVG(preco) AS "Média de preços: " FROM produtos;
--- Mostra a média arredondada dos preços dos produtos (sem levar consideração o estoque)
-SELECT ROUND(AVG(preco)) AS "Média de preços: " FROM produtos;
--- Mostra a média arredondada dos preços dos produtos (sem levar consideração o estoque) com 2 casas decimais
-SELECT ROUND(AVG(preco), 2) AS "Média de preços: " FROM produtos;
+
 ```
 
 ``` sql
