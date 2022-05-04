@@ -150,7 +150,27 @@ Sempre com WHERE
 ``` sql
 -- atualiza o nome do fabricante id = 8 de 'Microsoft' para 'microsoft brasil'
 UPDATE fabricantes SET nome = 'Microsoft Brasil' WHERE id = 8;
+-- mudar o preco do ultrabook positivo para 5200
+UPDATE produtos SET preco = 5200 WHERE id = 7;
+-- mudar a quantidade dos produtos da asus E da apple para 15
+UPDATE produtos SET quantidade = 15 WHERE fabricante_id = 1 OR fabricante_id =  3;
 ```
 
+## DELETE
+Excluir dados de uma tabela
+
+Sempre com WHERE
+
 ``` sql
+-- excluir o fabricante LG
+DELETE FROM fabricantes WHERE id = 4;
+-- os outros id's não sofrem alteração ou realocação
+-- como o padrão on delete está como 'restrict', não podemos deletar o fabricante que tem produtos cadastrado
+-- se o padrão fosse 'cascade', se excluiríam todos os produtos cadastrados com fabricante LG
+
+-- excluir produtos com preco menor que 2000 e maior que 500
+DELETE FROM produtos WHERE preco <= 2000 AND > 500;
+
+--antes de deletar, fazer um comando select para ter certeza que é isso que precisamos fazer
+SELECT nome FROM produtos WHERE preco <= 2000 AND preco > 500;
 ```
