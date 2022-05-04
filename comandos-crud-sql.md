@@ -142,7 +142,14 @@ SELECT SUM(preco) AS TOTAL FROM produtos GROUP BY fabricante_id;
 SELECT fabricante_id, SUM(preco) AS TOTAL FROM produtos GROUP BY fabricante_id;
 ```
 
+## UPDATE
+Atualizar o banco de dados de uma tabela
+
+Sempre com WHERE
+
 ``` sql
+-- atualiza o nome do fabricante id = 8 de 'Microsoft' para 'microsoft brasil'
+UPDATE fabricantes SET nome = 'Microsoft Brasil' WHERE id = 8;
 ```
 
 ``` sql
