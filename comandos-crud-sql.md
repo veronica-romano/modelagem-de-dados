@@ -118,7 +118,7 @@ SELECT AVG(preco) AS "Média de preços: " FROM produtos;
 SELECT ROUND(AVG(preco)) AS "Média de preços: " FROM produtos;
 -- Mostra a média arredondada dos preços dos produtos (sem levar consideração o estoque) com 2 casas decimais
 SELECT ROUND(AVG(preco), 2) AS "Média de preços: " FROM produtos;
-
+-- conta quantos produtos existem
 SELECT COUNT(id) AS "Quantidade de produtos" FROM produtos;
 ```
 
