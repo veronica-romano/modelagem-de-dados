@@ -1,4 +1,5 @@
 # COMANDOS CRUD SQL
+Executar com CTRL + SHIFT + ENTER
 
 ## Resumo
 
@@ -89,5 +90,25 @@ SELECT nome, preco FROM produtos WHERE fabricante_id IN (3,8);
 SELECT nome, preco, quantidade FROM produtos WHERE fabricante_id != 3;
 -- não, exceto
 SELECT nome, preco, quantidade FROM produtos WHERE NOT fabricante_id = 3;
+```
+### Filtros
 
+``` sql
+-- ordem A a Z
+SELECT nome, preco FROM produtos ORDER BY nome;
+-- ordem Z a A
+SELECT nome, preco FROM produtos ORDER BY nome DESC;
+-- encontrar na produtos que contenham a palavra 'processador' na descrição.  O operador %% é um operador coringa que significa qualquer texto
+SELECT nome, descricao FROM produtos WHERE descricao LIKE '%processador%';
+```
+
+### Operadores e funções de agregação
+``` sql
+SELECT SUM(preco) FROM produtos;
+SELECT SUM(preco) AS TOTAL FROM produtos;
+SELECT SUM(quantidade) AS "Quantidade em estoque: " FROM produtos;
+
+```
+
+``` sql
 ```
