@@ -66,7 +66,7 @@ VALUES
 );
 ```
 ## SELECT
---consultar o banco de dados
+consultar o banco de dados
 ### Ler dados da tabela produtos
 
 ``` sql
