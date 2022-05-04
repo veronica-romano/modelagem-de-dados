@@ -120,6 +120,10 @@ SELECT ROUND(AVG(preco)) AS "Média de preços: " FROM produtos;
 SELECT ROUND(AVG(preco), 2) AS "Média de preços: " FROM produtos;
 -- conta quantos produtos existem
 SELECT COUNT(id) AS "Quantidade de produtos" FROM produtos;
+-- conta quantos fabricantes existem na tabela (não ignorando os repetidos, resultando na mesma quantidade de produtos)
+SELECT COUNT(fabricante_id) AS "Quantidade de fabricantes" FROM produtos;
+-- conta quantos fabricantes existem na tabela ignorando os repetidos
+SELECT COUNT(DISTINCT fabricante_id) AS "Quantidade de fabricantes" FROM produtos;
 ```
 
 ``` sql
