@@ -71,15 +71,20 @@ consultar o banco de dados
 ### Ler dados da tabela produtos
 
 ``` sql
-SELECT * FROM produtos; -- todos os itens em produtos
-SELECT nome, preco FROM produtos; -- penas nome e preco em produtos
-SELECT nome FROM produtos WHERE preco < 5000; -- o nome de produtos com preco menor que 5 mil
-SELECT nome, descricao FROM produtos WHERE fabricante_id = 3; -- nome e descrição de todos os produtos da fabricante apple
+-- todos os itens em produtos
+SELECT * FROM produtos; 
+-- penas nome e preco em produtos
+SELECT nome, preco FROM produtos; 
+-- o nome de produtos com preco menor que 5 mil
+SELECT nome FROM produtos WHERE preco < 5000; 
+-- nome e descrição de todos os produtos da fabricante apple
+SELECT nome, descricao FROM produtos WHERE fabricante_id = 3; 
 ```
 
 ### Operadores E OU NAO
 ``` sql
-SELECT * FROM produtos WHERE preco >= 5000 AND preco < 8000; -- seleciona todos os produtos onde o preco é maior ou igual a 5 mil e menor de 8 mil em preco
+-- seleciona todos os produtos onde o preco é maior ou igual a 5 mil e menor de 8 mil em preco
+SELECT * FROM produtos WHERE preco >= 5000 AND preco < 8000; 
 
 SELECT nome, preco FROM produtos WHERE fabricante_id = 3 OR fabricante_id = 8;
 
