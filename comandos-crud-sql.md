@@ -189,8 +189,5 @@ SELECT produtos.nome AS "produto", fabricantes.nome AS "fabricante" FROM produto
 SELECT produtos.nome AS "produto", fabricantes.nome AS "fabricante" FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id ORDER BY produtos.nome;
 
 -- fabricante, soma dos precos, e quantidade de produtos
-SELECT fabricantes.nome AS "fabricante: ", SUM(produtos.preco) AS "total: ", COUNT(produtos.fabricante_id) AS "Quantidade de produtos: " FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id GROUP BY fabricante_id;
-
--- o mesmo comando, ordenando por nome do fabricante
-SELECT fabricantes.nome AS "fabricante: ", SUM(produtos.preco) AS "total: ", COUNT(produtos.fabricante_id) AS "Quantidade de produtos: " FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id GROUP BY fabricante_id ORDER BY fabricantes.nome;
+SELECT fabricantes.nome AS Fabricante, SUM(produtos.preco) AS Total, COUNT(produtos.fabricante_id) AS "Qtd de produtos" FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id GROUP BY Fabricante ORDER BY Total;
 ```
