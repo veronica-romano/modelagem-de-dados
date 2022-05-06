@@ -183,4 +183,6 @@ SELECT produtos.nome , fabricantes.nome
 FROM produtos INNER JOIN fabricantes 
 -- on
 ON produtos.fabricante_id = fabricantes.id;
+
+SELECT produtos.nome AS "produto", fabricantes.nome AS "fabricante" FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id;
 ```
