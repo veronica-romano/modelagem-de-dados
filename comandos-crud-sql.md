@@ -177,5 +177,10 @@ SELECT nome FROM produtos WHERE preco <= 2000 AND preco > 500;
 
 ### Consulta em duas ou mais tabelas (JUNÇÃO)
 ``` sql
-SELECT produtos.nome , fabricantes.nome  FROM produtos INNER JOIN fabricantes ON produtos.fabricante_id = fabricantes.id;
+-- nome da tabela.nomedacoluna
+SELECT produtos.nome , fabricantes.nome
+-- inner join
+FROM produtos INNER JOIN fabricantes 
+-- on
+ON produtos.fabricante_id = fabricantes.id;
 ```
