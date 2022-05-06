@@ -174,3 +174,8 @@ DELETE FROM produtos WHERE preco <= 2000 AND > 500;
 --antes de deletar, fazer um comando select para ter certeza que é isso que precisamos fazer
 SELECT nome FROM produtos WHERE preco <= 2000 AND preco > 500;
 ```
+
+### Consulta em duas ou mais tabelas (JUNÇÃO)
+``` sql
+
+```
