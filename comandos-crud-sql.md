@@ -177,5 +177,5 @@ SELECT nome FROM produtos WHERE preco <= 2000 AND preco > 500;
 
 ### Consulta em duas ou mais tabelas (JUNÇÃO)
 ``` sql
-
+SELECT produtos.nome , fabricantes.nome  
 ```
