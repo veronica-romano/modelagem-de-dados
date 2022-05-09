@@ -31,7 +31,8 @@ VALUES ('Joan Jett', '1958-09-22' , 5.3, 6.5, 3);
 ```
 
 
+Encontrando a média
+```sql
 
+```
 
-
-SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
