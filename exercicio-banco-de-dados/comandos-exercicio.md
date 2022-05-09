@@ -64,7 +64,6 @@ ALTER TABLE alunos ADD CONSTRAINT fk_curso FOREIGN KEY (curso_id) REFERENCES cur
 
 ## Fase 2
 
-
 Inserindo cursos:
 ```sql
 INSERT INTO cursos (titulo, carga) 
@@ -92,4 +91,6 @@ Encontrando a média
 ```sql
 SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
 ```
+
+## Fase 3
 
