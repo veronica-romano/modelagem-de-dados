@@ -32,7 +32,7 @@ Criando a entidade professores:
 CREATE TABLE professores(
     id SMALLINT  NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(30) NOT NULL,
-    area ('desing', 'desenvolvimento', 'infra') NOT NULL,
+    area ENUM('desing', 'desenvolvimento', 'infra') NOT NULL,
     curso_id INT NULL
 );
 ```
