@@ -87,6 +87,14 @@ INSERT INTO alunos (nome, nascimento, nota1, nota2, curso_id)
 VALUES ('Joan Jett', '1958-09-22' , 5.3, 6.5, 3);
 ```
 
+Alterando professor_id para not null
+```sql
+ALTER TABLE `cursos` CHANGE `professor_id` `professor_id` INT(11) NOT NULL;
+
+```
+
+
+
 Encontrando a média
 ```sql
 SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
