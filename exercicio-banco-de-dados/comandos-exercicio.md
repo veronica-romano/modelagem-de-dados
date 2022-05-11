@@ -94,12 +94,6 @@ ALTER TABLE `cursos` CHANGE `professor_id` `professor_id` INT(11) NOT NULL;
 ```
 
 
-
-Encontrando a média
-```sql
-SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
-```
-
 ## Fase 3
 
 ordenando alunos por nascimento:
@@ -189,4 +183,12 @@ DELETE FROM alunos WHERE id = 6 OR id = 5;
 SELECT alunos.nome AS `Alunos`, cursos.titulo AS `Cursos` FROM alunos LEFT JOIN CURSOS ON alunos.curso_id = cursos.id group by alunos;
 ```
 
+## Desafio
+
+
+
+Encontrando a média
+```sql
+SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
+```
 
