@@ -103,30 +103,57 @@ SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
 ## Fase 3
 
 ordenando alunos por nascimento:
+```sql
 SELECT nome, nascimento FROM alunos ORDER BY nascimento;
+```
+
 
 1) consulta que mostre os alunos que nasceram antes do ano 2009
+```sql
 SELECT * FROM alunos WHERE nascimento < '2009-01-01';
+```
+
 
 2) consulta que calcula a média das notas de cada aluno e as mostra com duas casas decimais.
+```sql
 SELECT nome, ROUND(AVG((nota1 + nota2)/2), 2) AS media FROM alunos GROUP BY id;
+```
+
 
 3) consulta que calcule o limite de faltas de cada curso de acordo com a carga horária. Considerando o limite como 25% da carga horária. Classificando em ordem crescente pelo título do curso.
+```sql
+
+```
 select titulo, carga, ROUND(carga * 0.25) AS 'limite' FROM cursos ORDER BY titulo;
 
 4) consulta que mostra os nomes somente dos professores da área de desenvolvimento.
+```sql
+
+```
 SELECT nome FROM professores WHERE area = 'desenvolvimento';
 SELECT * FROM professores WHERE area = 'desenvolvimento';
 
 5) consulta que mostra a quantidade de professores por área de desenvolvimento.
+```sql
+
+```
 SELECT COUNT(id) AS 'quantidade' FROM professores WHERE area = 'desenvolvimento';
 
 6) consulta que mostra o nome dos alunos, o título e a carga horária dos cursos que fazem.
+```sql
+
+```
 SELECT alunos.nome, cursos.titulo, cursos.carga FROM alunos LEFT JOIN cursos ON alunos.curso_id = cursos.id ORDER BY alunos.nome;
 
 7) consulta que mostra o nome dos professores e o título do curso que lecionam. Classificando pelo nome do professor.
+```sql
+
+```
 SELECT professores.nome, cursos.titulo FROM professores LEFT JOIN cursos ON professores.curso_id = cursos.id ORDER BY professores.nome;
 
 8)consulta que mostra o nome dos alunos, o título dos cursos que fazem, e o professor de cada curso.
+```sql
+
+```
 SELECT alunos.nome, cursos.titulo, professores.nome FROM alunos LEFT JOIN cursos ON alunos.curso_id = cursos.id LEFT JOIN professores ON professores.curso_id = cursos.id;
 
