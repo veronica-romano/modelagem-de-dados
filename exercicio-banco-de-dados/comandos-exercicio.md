@@ -207,6 +207,7 @@ SELECT nome, ROUND(((nota1 + nota2)/2), 2) AS `media` FROM alunos WHERE ROUND(((
 Encontrando a quantidade de alunos com média maior ou igual a 7.
 ```sql
 SELECT COUNT(id) FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0;
+
 SELECT COUNT(id) AS `quantidade de alunos com nota maior ou igual a 7` FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0 ;
 ```
 
