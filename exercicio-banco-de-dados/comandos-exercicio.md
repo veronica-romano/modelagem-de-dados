@@ -185,10 +185,19 @@ SELECT alunos.nome AS `Alunos`, cursos.titulo AS `Cursos` FROM alunos LEFT JOIN 
 
 ## Desafio
 
+Encontrando a idade dos alunos:
 
+```sql
+SELECT nome AS `Aluno`, TIMESTAMPDIFF(YEAR, nascimento, CURDATE()) AS `Idade` FROM alunos;
+```
 
 Encontrando a média
 ```sql
-SELECT nome, curso,((nota1 + nota2)/2) AS "Média: " FROM alunos;
+SELECT nome, curso,((nota1 + nota2)/2) AS `Média` FROM alunos;
 ```
 
+Encontrando a média das notas de cada aluno mostrando alunos que tiveram a média maior ou igual a 7.
+
+Encontrando a média das notas de cada aluno mostrando alunos que tiveram a média menor que 7.
+
+Encontrando a quantidade de alunos com média maior ou igual a 7.
