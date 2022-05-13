@@ -193,18 +193,19 @@ SELECT nome AS `Aluno`, TIMESTAMPDIFF(YEAR, nascimento, CURDATE()) AS `Idade` FR
 
 Encontrando a média
 ```sql
-SELECT nome, curso,((nota1 + nota2)/2) AS `Média` FROM alunos;
+SELECT nome, ROUND(((nota1 + nota2)/2), 2) AS `Média` FROM alunos;
 ```
 
 Encontrando a média das notas de cada aluno mostrando alunos que tiveram a média maior ou igual a 7.
 ```sql
-
+SELECT nome, ROUND(((nota1 + nota2)/2), 2) AS `media` FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0 ;
 ```
 Encontrando a média das notas de cada aluno mostrando alunos que tiveram a média menor que 7.
 ```sql
-
+SELECT nome, ROUND(((nota1 + nota2)/2), 2) AS `media` FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) < 7.0 ;
 ```
 Encontrando a quantidade de alunos com média maior ou igual a 7.
 ```sql
-
+SELECT COUNT(id) FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0;
 ```
+
