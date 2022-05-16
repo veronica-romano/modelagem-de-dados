@@ -210,10 +210,7 @@ SELECT COUNT(id) FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0;
 
 SELECT COUNT((primeira_nota+segunda_nota)/2) AS 'Qtd de alunos com média acima ou igual à 7' FROM alunos WHERE (primeira_nota+segunda_nota)/2 >= 7;
 
-
 SELECT COUNT(id) AS `quantidade de alunos com nota maior ou igual a 7` FROM alunos WHERE ROUND(((nota1 + nota2)/2), 2) >= 7.0 ;
-
-
 
 ```
 
